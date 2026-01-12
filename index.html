@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mind | Portfolio</title>
+  <title>Chalisa Intapanya | Portfolio</title>
 
   <style>
     body {
@@ -68,8 +68,24 @@
 
     .project img {
       width: 100%;
-      margin-top: 15px;
-      border-radius: 10px;
+      border-radius: 12px;
+    }
+
+    /* PCB Gallery */
+    .pcb-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .pcb-gallery img {
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .pcb-gallery img:hover {
+      transform: scale(1.03);
     }
 
     .skills span {
@@ -135,11 +151,15 @@
   <div class="project">
     <h3>Bandpass Filter (BPF) PCB Project</h3>
     <p>
-      Participated in PCB fabrication for a Bandpass Filter circuit.
-      Responsible for PCB assembly, soldering components on copper board,
+      Fabricated a Bandpass Filter circuit on PCB.
+      Involved in PCB assembly, soldering components on copper board,
       and testing the completed circuit.
     </p>
-    <img src="images/pcb.jpg" alt="PCB Project">
+
+    <div class="pcb-gallery">
+      <img src="images/pcb1.jpg" alt="PCB Front">
+      <img src="images/pcb2.jpg" alt="PCB Back">
+    </div>
   </div>
 
 </section>
@@ -153,13 +173,13 @@
     <span>Embedded Systems (Basic)</span>
     <span>Programming (Basic)</span>
     <span>AI / YOLO (Basic)</span>
-    <span>PCB Soldering</span>
+    <span>PCB Assembly & Soldering</span>
   </div>
 </section>
 
 <section>
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <p>Email: mind11477@email.com</p>
 </section>
 
 <footer>
