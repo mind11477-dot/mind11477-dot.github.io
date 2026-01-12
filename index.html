@@ -3,48 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Mind | Portfolio</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       background: #f5f7fa;
       color: #333;
-      line-height: 1.6;
+      line-height: 1.7;
     }
+
     header {
-      background: #1f2937;
+      background: linear-gradient(135deg, #1f2937, #374151);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 32px;
+    }
+
+    header p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
     section {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
+
     h2 {
-      border-bottom: 2px solid #e5e7eb;
+      font-size: 24px;
+      border-bottom: 3px solid #e5e7eb;
       padding-bottom: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
+
     .project {
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     }
+
+    .project h3 {
+      margin-top: 0;
+      color: #1f2937;
+    }
+
     .project img {
       width: 100%;
-      border-radius: 8px;
-      margin-top: 10px;
+      margin-top: 15px;
+      border-radius: 10px;
     }
+
+    .skills span {
+      display: inline-block;
+      background: #e5e7eb;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 6px;
+      font-size: 14px;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background: #e5e7eb;
       font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
@@ -52,7 +94,8 @@
 <body>
 
 <header>
-  <h1>My Portfolio</h1>
+  <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+  <h1>Mind</h1>
   <p>Electronics Engineering Student | Silpakorn University</p>
 </header>
 
@@ -60,8 +103,9 @@
   <h2>About Me</h2>
   <p>
     I am a third-year Electronics Engineering student at Silpakorn University.
-    I am interested in electronics, programming, and embedded systems.
-    I enjoy learning new things and working on practical projects.
+    I am interested in electronics, embedded systems, and programming.
+    I enjoy hands-on work such as circuit assembly, soldering, and system testing,
+    and I am eager to gain real-world engineering experience.
   </p>
 </section>
 
@@ -69,41 +113,48 @@
   <h2>Projects</h2>
 
   <div class="project">
-    <h3>Arduino Game Project</h3>
+    <h3>Arduino Game Project (Proteus Simulation)</h3>
     <p>
-      Multi-level Arduino game developed in Proteus simulation.
-      Used LCD, keypad, PIR sensor, 7-segment display, LED matrix, and potentiometer.
-      Implemented a heart system for game logic.
+      Developed a multi-level Arduino-based game using Proteus simulation.
+      The system integrates LCD display, keypad input, PIR sensor,
+      7-segment display, 8×8 LED matrix, and potentiometer.
+      Implemented a heart-based game logic system for player progression.
     </p>
-    <!-- ใส่รูปตรงนี้ -->
-    <!-- <img src="images/arduino.jpg"> -->
+    <img src="images/arduino.jpg" alt="Arduino Game Project">
   </div>
 
   <div class="project">
     <h3>Motion Detection System (Raspberry Pi)</h3>
     <p>
-      Motion detection system using Raspberry Pi 3 Model A+ and PIR sensor.
-      Programmed to detect motion and trigger an alert.
+      Built a motion detection system using Raspberry Pi 3 Model A+ and PIR sensor.
+      The system detects movement and triggers alerts based on detected activity.
     </p>
-    <!-- <img src="images/pi.jpg"> -->
+    <img src="images/pi.jpg" alt="Raspberry Pi Project">
   </div>
 
   <div class="project">
     <h3>Bandpass Filter (BPF) PCB Project</h3>
     <p>
-      Built a Bandpass Filter circuit on PCB.
-      Fabricated PCB using copper board and soldered components.
+      Participated in PCB fabrication for a Bandpass Filter circuit.
+      Responsible for PCB assembly, soldering components on copper board,
+      and testing the completed circuit.
     </p>
-    <!-- <img src="images/pcb.jpg"> -->
+    <img src="images/pcb.jpg" alt="PCB Project">
   </div>
 
 </section>
 
 <section>
   <h2>Skills</h2>
-  <p>
-    Electronics, Arduino, Raspberry Pi, Basic Programming, AI / YOLO (basic)
-  </p>
+  <div class="skills">
+    <span>Electronics</span>
+    <span>Arduino</span>
+    <span>Raspberry Pi</span>
+    <span>Embedded Systems (Basic)</span>
+    <span>Programming (Basic)</span>
+    <span>AI / YOLO (Basic)</span>
+    <span>PCB Soldering</span>
+  </div>
 </section>
 
 <section>
@@ -112,7 +163,7 @@
 </section>
 
 <footer>
-  © 2026 My Portfolio
+  © 2026 Mind | Portfolio
 </footer>
 
 </body>
