@@ -1,110 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Mind | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.7;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1f2937, #374151);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .profile-img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 32px;
-    }
-
-    header p {
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
-    .buttons {
-      margin-top: 25px;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin: 8px;
-      padding: 12px 24px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 15px;
-      transition: 0.3s;
-    }
-
-    .buttons a:hover {
-      background: #1e40af;
-      transform: translateY(-2px);
-    }
-
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    h2 {
-      border-bottom: 3px solid #e5e7eb;
-      padding-bottom: 10px;
-      margin-bottom: 30px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #e5e7eb;
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
+  <!-- เชื่อม style.css -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <img src="images/profile.jpg" class="profile-img">
+  <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
   <h1>Mind</h1>
   <p>Electronics Engineering Student | Silpakorn University</p>
-
-  <div class="buttons">
-    <a href="projects.html">🔧 View Projects</a>
-  </div>
 </header>
 
-<section>
-  <h2>About Me</h2>
+<!-- PROFILE -->
+<div class="section">
+  <h2>Profile</h2>
   <p>
-    Third-year Electronics Engineering student interested in electronics,
-    embedded systems, and hands-on hardware projects.
+    I am a third-year Electronics Engineering student at Silpakorn University.
+    I am interested in electronics, programming, and embedded systems.
+    I am eager to learn new skills and gain hands-on experience.
+    I can adapt well to new environments and work well with others.
   </p>
-</section>
+</div>
+
+<!-- ABOUT ME -->
+<div class="section">
+  <h2>About Me</h2>
+  <ul class="about-list">
+    <li><strong>Full Name:</strong> Chalisa Intapanya</li>
+    <li><strong>Date of Birth:</strong> October 12, 2004</li>
+    <li><strong>Nationality:</strong> Thai</li>
+    <li><strong>Email:</strong> mind11477@gmail.com</li>
+    <li><strong>Phone:</strong> 098-538-6299</li>
+    <li><strong>Address:</strong> 83/2 Samsen Road, Bangkok 10200, Thailand</li>
+  </ul>
+</div>
+
+<!-- EDUCATION -->
+<div class="section">
+  <h2>Education</h2>
+  <p>
+    <strong>Electronics and Computer System Engineering</strong><br>
+    Silpakorn University<br>
+    GPA: 3.25 / 4.00
+  </p>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Arduino Game Project (Proteus Simulation)</h3>
+    <p>
+      Developed a multi-level Arduino-based game using Proteus simulation.
+      Integrated LCD, keypad, PIR sensor, 7-segment display, 8×8 LED matrix,
+      and potentiometer with heart-based game logic.
+    </p>
+    <img src="images/arduino.jpg" alt="Arduino Project">
+  </div>
+
+  <div class="project">
+    <h3>Motion Detection System (Raspberry Pi)</h3>
+    <p>
+      Built a motion detection system using Raspberry Pi 3 Model A+
+      and PIR sensor for detecting movement and triggering alerts.
+    </p>
+    <img src="images/pi.jpg" alt="Raspberry Pi Project">
+  </div>
+
+  <div class="project">
+    <h3>Bandpass Filter PCB Project</h3>
+    <p>
+      Participated in PCB fabrication for a Bandpass Filter circuit.
+      Responsible for soldering, assembly, and circuit testing.
+    </p>
+    <img src="images/pcb.jpg" alt="PCB Project">
+  </div>
+</div>
+
+<!-- SKILLS -->
+<div class="section">
+  <h2>Skills</h2>
+
+  <p>Python – 40%</p>
+  <progress value="40" max="100"></progress>
+
+  <p>C / C++ (Arduino) – 50%</p>
+  <progress value="50" max="100"></progress>
+
+  <p>Circuit Analysis – 60%</p>
+  <progress value="60" max="100"></progress>
+
+  <p>Proteus – 80%</p>
+  <progress value="80" max="100"></progress>
+
+  <p>MATLAB – 60%</p>
+  <progress value="60" max="100"></progress>
+
+  <p>Arduino IDE – 75%</p>
+  <progress value="75" max="100"></progress>
+
+  <p>LabVIEW – 70%</p>
+  <progress value="70" max="100"></progress>
+
+  <p>P-Spice – 70%</p>
+  <progress value="70" max="100"></progress>
+
+  <p>Word – 80%</p>
+  <progress value="80" max="100"></progress>
+
+  <p>Excel – 50%</p>
+  <progress value="50" max="100"></progress>
+
+  <p>PowerPoint – 70%</p>
+  <progress value="70" max="100"></progress>
+
+  <p>Oracle VM VirtualBox – 50%</p>
+  <progress value="50" max="100"></progress>
+
+  <p>R Program – 50%</p>
+  <progress value="50" max="100"></progress>
+</div>
 
 <footer>
-  © 2026 Chalisa | Portfolio
+  © 2026 Mind | Portfolio
 </footer>
 
 </body>
