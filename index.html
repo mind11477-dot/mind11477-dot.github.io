@@ -4,116 +4,7 @@
   <meta charset="UTF-8">
   <title>Chalisa Intapanya | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- style.css -->
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.7;
-    }
-
-    header {
-      background: linear-gradient(135deg, #1f2937, #374151);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
-
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 32px;
-    }
-
-    header p {
-      font-size: 16px;
-      opacity: 0.9;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 40px;
-      background: #2563eb;
-      color: white;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #1d4ed8;
-    }
-
-    .section {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-
-    .section h2 {
-      font-size: 26px;
-      border-bottom: 3px solid #2563eb;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .about-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .about-list li {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    /* Skills */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px 40px;
-    }
-
-    .skill-item p {
-      margin: 0 0 6px;
-      font-weight: 500;
-    }
-
-    progress {
-      width: 100%;
-      height: 14px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #e5e7eb;
-      color: #555;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 700px) {
-      .skills-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -123,8 +14,11 @@
   <h1>Chalisa Intapanya</h1>
   <p>Electronics and Computer System Engineering Student | Silpakorn University</p>
 
-  <!-- ปุ่มกด Projects -->
-  <a href="projects.html" class="btn">View Projects</a>
+  <!-- BUTTONS -->
+  <div class="btn-group">
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="certificates.html" class="btn">Certificates</a>
+  </div>
 </header>
 
 <!-- PROFILE -->
@@ -147,7 +41,7 @@
     <li><strong>Nationality:</strong> Thai</li>
     <li><strong>Email:</strong> mind11477@gmail.com</li>
     <li><strong>Phone:</strong> 098-538-6299</li>
-    <li><strong>Address:</strong> 83/2 Samsen Road, Bangkok 10200, Thailand</li>
+    <li><strong>Address:</strong> Bangkok, Thailand</li>
   </ul>
 </div>
 
@@ -166,72 +60,23 @@
   <h2>Skills</h2>
 
   <div class="skills-grid">
-
-    <div class="skill-item">
-      <p>Python – 40%</p>
-      <progress value="40" max="100"></progress>
+    <div>
+      <p>Python</p><progress value="40" max="100"></progress>
+      <p>C / C++ (Arduino)</p><progress value="50" max="100"></progress>
+      <p>Circuit Analysis</p><progress value="60" max="100"></progress>
+      <p>Proteus</p><progress value="80" max="100"></progress>
+      <p>MATLAB</p><progress value="60" max="100"></progress>
+      <p>Arduino IDE</p><progress value="75" max="100"></progress>
     </div>
 
-    <div class="skill-item">
-      <p>C / C++ (Arduino) – 50%</p>
-      <progress value="50" max="100"></progress>
+    <div>
+      <p>LabVIEW</p><progress value="70" max="100"></progress>
+      <p>P-Spice</p><progress value="70" max="100"></progress>
+      <p>Word</p><progress value="80" max="100"></progress>
+      <p>Excel</p><progress value="50" max="100"></progress>
+      <p>PowerPoint</p><progress value="70" max="100"></progress>
+      <p>Oracle VM VirtualBox</p><progress value="50" max="100"></progress>
     </div>
-
-    <div class="skill-item">
-      <p>Circuit Analysis – 60%</p>
-      <progress value="60" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>Proteus – 80%</p>
-      <progress value="80" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>MATLAB – 60%</p>
-      <progress value="60" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>Arduino IDE – 75%</p>
-      <progress value="75" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>LabVIEW – 70%</p>
-      <progress value="70" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>P-Spice – 70%</p>
-      <progress value="70" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>Word – 80%</p>
-      <progress value="80" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>Excel – 50%</p>
-      <progress value="50" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>PowerPoint – 70%</p>
-      <progress value="70" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>Oracle VM VirtualBox – 50%</p>
-      <progress value="50" max="100"></progress>
-    </div>
-
-    <div class="skill-item">
-      <p>R Program – 50%</p>
-      <progress value="50" max="100"></progress>
-    </div>
-
   </div>
 </div>
 
