@@ -1,0 +1,27 @@
+.section {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.section h2 {
+  font-size: 28px;
+  border-bottom: 3px solid #6c63ff;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
