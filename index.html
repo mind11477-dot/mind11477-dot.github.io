@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chalisa Intapanya | Portfolio</title>
+  <title>Mind | Portfolio</title>
 
   <style>
     body {
@@ -40,6 +40,27 @@
       opacity: 0.9;
     }
 
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 24px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #1e40af;
+      transform: translateY(-2px);
+    }
+
     section {
       max-width: 900px;
       margin: auto;
@@ -47,54 +68,9 @@
     }
 
     h2 {
-      font-size: 24px;
       border-bottom: 3px solid #e5e7eb;
       padding-bottom: 10px;
       margin-bottom: 30px;
-    }
-
-    .project {
-      background: white;
-      padding: 25px;
-      margin-bottom: 30px;
-      border-radius: 14px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    }
-
-    .project h3 {
-      margin-top: 0;
-      color: #1f2937;
-    }
-
-    .project img {
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    /* PCB Gallery */
-    .pcb-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .pcb-gallery img {
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      transition: 0.3s;
-    }
-
-    .pcb-gallery img:hover {
-      transform: scale(1.03);
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #e5e7eb;
-      padding: 8px 14px;
-      border-radius: 20px;
-      margin: 6px;
-      font-size: 14px;
     }
 
     footer {
@@ -110,80 +86,25 @@
 <body>
 
 <header>
-  <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+  <img src="images/profile.jpg" class="profile-img">
   <h1>Mind</h1>
   <p>Electronics Engineering Student | Silpakorn University</p>
+
+  <div class="buttons">
+    <a href="projects.html">🔧 View Projects</a>
+  </div>
 </header>
 
 <section>
   <h2>About Me</h2>
   <p>
-    I am a third-year Electronics Engineering student at Silpakorn University.
-    I am interested in electronics, embedded systems, and programming.
-    I enjoy hands-on work such as circuit assembly, soldering, and system testing,
-    and I am eager to gain real-world engineering experience.
+    Third-year Electronics Engineering student interested in electronics,
+    embedded systems, and hands-on hardware projects.
   </p>
 </section>
 
-<section>
-  <h2>Projects</h2>
-
-  <div class="project">
-    <h3>Arduino Game Project (Proteus Simulation)</h3>
-    <p>
-      Developed a multi-level Arduino-based game using Proteus simulation.
-      The system integrates LCD display, keypad input, PIR sensor,
-      7-segment display, 8×8 LED matrix, and potentiometer.
-      Implemented a heart-based game logic system for player progression.
-    </p>
-    <img src="images/arduino.jpg" alt="Arduino Game Project">
-  </div>
-
-  <div class="project">
-    <h3>Motion Detection System (Raspberry Pi)</h3>
-    <p>
-      Built a motion detection system using Raspberry Pi 3 Model A+ and PIR sensor.
-      The system detects movement and triggers alerts based on detected activity.
-    </p>
-    <img src="images/pi.jpg" alt="Raspberry Pi Project">
-  </div>
-
-  <div class="project">
-    <h3>Bandpass Filter (BPF) PCB Project</h3>
-    <p>
-      Fabricated a Bandpass Filter circuit on PCB.
-      Involved in PCB assembly, soldering components on copper board,
-      and testing the completed circuit.
-    </p>
-
-    <div class="pcb-gallery">
-      <img src="images/pcb1.jpg" alt="PCB Front">
-      <img src="images/pcb2.jpg" alt="PCB Back">
-    </div>
-  </div>
-
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Electronics</span>
-    <span>Arduino</span>
-    <span>Raspberry Pi</span>
-    <span>Embedded Systems (Basic)</span>
-    <span>Programming (Basic)</span>
-    <span>AI / YOLO (Basic)</span>
-    <span>PCB Assembly & Soldering</span>
-  </div>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: mind11477@email.com</p>
-</section>
-
 <footer>
-  ©2026 Mind | Portfolio
+  © 2026 Mind | Portfolio
 </footer>
 
 </body>
