@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Chalisa Intapanya | Portfolio</title>
 
-  <!-- INLINE STYLE : สีเดิม สไตล์เดิม -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -37,13 +36,14 @@
 
     .btn {
       display: inline-block;
-      margin: 0 10px;
+      margin: 6px 10px;
       padding: 10px 22px;
       background: #3b82f6;
       color: white;
       text-decoration: none;
       border-radius: 25px;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -92,6 +92,36 @@
       margin-top: 40px;
     }
 
+    /* ===== PORTFOLIO MODAL ===== */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+    }
+
+    .modal-content {
+      margin: 5% auto;
+      max-width: 80%;
+      text-align: center;
+    }
+
+    .modal-content img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .close {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+    }
+
     @media (max-width: 700px) {
       .skills-grid {
         grid-template-columns: 1fr;
@@ -103,71 +133,46 @@
 <body>
 
 <header>
-  <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+  <img src="images/profile.jpg" class="profile-img">
   <h1>Chalisa Intapanya</h1>
   <p>Electronics and Computer System Engineering Student | Silpakorn University</p>
 
   <div class="btn-group">
     <a href="projects.html" class="btn">Projects</a>
     <a href="certificates.html" class="btn">Certificates</a>
+    <span class="btn" onclick="openPortfolio()">View Portfolio</span>
   </div>
 </header>
 
-<!-- PROFILE -->
 <div class="section">
   <h2>Profile</h2>
   <p>
     I am a third-year Electronics and Computer System Engineering student at
     Silpakorn University. I am interested in electronics, programming,
-    and embedded systems. I am eager to learn new skills and gain hands-on
-    experience. I can adapt well to new environments and work well with others.
+    and embedded systems.
   </p>
 </div>
 
-<!-- ABOUT ME -->
 <div class="section">
   <h2>About Me</h2>
   <ul class="about-list">
     <li><strong>Full Name:</strong> Chalisa Intapanya</li>
     <li><strong>Date of Birth:</strong> October 12, 2004</li>
-    <li><strong>Nationality:</strong> Thai</li>
     <li><strong>Email:</strong> mind11477@gmail.com</li>
     <li><strong>Phone:</strong> 098-538-6299</li>
-    <li><strong>Address:</strong> Bangkok, Thailand</li>
   </ul>
 </div>
 
-<!-- EDUCATION -->
-<div class="section">
-  <h2>Education</h2>
-  <p>
-    <strong>Electronics and Computer System Engineering</strong><br>
-    Silpakorn University<br>
-    GPA: <strong>3.25 / 4.00</strong>
-  </p>
-</div>
-
-<!-- SKILLS -->
 <div class="section">
   <h2>Skills</h2>
-
   <div class="skills-grid">
     <div>
-      <p>Python</p><progress value="40" max="100"></progress>
-      <p>C / C++ (Arduino)</p><progress value="50" max="100"></progress>
-      <p>Circuit Analysis</p><progress value="60" max="100"></progress>
-      <p>Proteus</p><progress value="80" max="100"></progress>
-      <p>MATLAB</p><progress value="60" max="100"></progress>
-      <p>Arduino IDE</p><progress value="75" max="100"></progress>
+      <p>C / C++</p><progress value="50" max="100"></progress>
+      <p>Arduino</p><progress value="75" max="100"></progress>
     </div>
-
     <div>
-      <p>LabVIEW</p><progress value="70" max="100"></progress>
-      <p>P-Spice</p><progress value="70" max="100"></progress>
-      <p>Word</p><progress value="80" max="100"></progress>
-      <p>Excel</p><progress value="50" max="100"></progress>
-      <p>PowerPoint</p><progress value="70" max="100"></progress>
-      <p>Oracle VM VirtualBox</p><progress value="50" max="100"></progress>
+      <p>MATLAB</p><progress value="60" max="100"></progress>
+      <p>Proteus</p><progress value="80" max="100"></progress>
     </div>
   </div>
 </div>
@@ -175,6 +180,24 @@
 <footer>
   © 2026 Chalisa Intapanya | Portfolio
 </footer>
+
+<!-- ===== MODAL ===== -->
+<div id="portfolioModal" class="modal">
+  <span class="close" onclick="closePortfolio()">&times;</span>
+  <div class="modal-content">
+    <img src="images/portfolio.jpg" alt="Portfolio Image">
+  </div>
+</div>
+
+<script>
+  function openPortfolio() {
+    document.getElementById("portfolioModal").style.display = "block";
+  }
+
+  function closePortfolio() {
+    document.getElementById("portfolioModal").style.display = "none";
+  }
+</script>
 
 </body>
 </html>
